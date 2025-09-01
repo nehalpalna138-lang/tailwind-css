@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Tailwind Example</title>
+  <!-- ✅ Tailwind CDN Link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <!-- Main Card -->
+  <div class="max-w-md w-full bg-white shadow-2xl rounded-2xl overflow-hidden transform transition hover:scale-105 hover:shadow-3xl duration-300">
+    <!-- 
+      max-w-md   → sets max width to "medium" size
+      w-full     → takes full width available
+      bg-white   → background color white
+      shadow-2xl → extra large shadow
+      rounded-2xl→ rounded corners (extra large radius)
+      overflow-hidden → hides content outside border
+      transform transition → enables animation transformations
+      hover:scale-105 → slightly zoom on hover
+      hover:shadow-3xl → apply deeper shadow on hover
+      duration-300 → animation duration = 300ms
+    -->
+
+    <!-- Image Section -->
+    <img src="https://picsum.photos/600/300" alt="Sample"
+         class="w-full h-48 object-cover">
+    <!-- 
+      w-full       → makes image full width
+      h-48         → fixed height (12rem)
+      object-cover → keeps image aspect ratio, covers box fully
+    -->
+
+    <!-- Card Content -->
+    <div class="p-6 space-y-4">
+      <!-- 
+        p-6       → padding (1.5rem)
+        space-y-4 → vertical spacing of 1rem between children
+      -->
+
+      <h2 class="text-2xl font-bold text-gray-800 tracking-tight">
+        Tailwind Advanced Card
+      </h2>
+      <!-- 
+        text-2xl      → large text size
+        font-bold     → bold font
+        text-gray-800 → dark gray color
+        tracking-tight→ tighter letter spacing
+      -->
+
+      <p class="text-gray-600 leading-relaxed">
+        This is an example card built using Tailwind CSS with advanced
+        utility classes such as transitions, transforms, hover effects,
+        shadows, spacing utilities, and responsive design.
+      </p>
+      <!-- 
+        text-gray-600  → lighter gray text
+        leading-relaxed→ relaxed line height (more spacing between lines)
+      -->
+
+      <!-- Buttons -->
+      <div class="flex space-x-4">
+        <!-- flex      → display flex
+             space-x-4 → horizontal spacing of 1rem between buttons -->
+
+        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-400 transition">
+          Learn More
+        </button>
+        <!-- 
+          px-4 py-2       → padding X=1rem, Y=0.5rem
+          bg-blue-600     → blue background
+          text-white      → white text
+          rounded-lg      → rounded corners
+          shadow-md       → medium shadow
+          hover:bg-blue-700 → darker blue on hover
+          focus:ring-2 focus:ring-blue-400 → blue outline on focus
+          transition      → smooth hover/focus effect
+        -->
+
+        <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition">
+          Cancel
+        </button>
+        <!-- 
+          bg-gray-200 → light gray background
+          text-gray-700→ dark gray text
+          hover:bg-gray-300→ slightly darker on hover
+        -->
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

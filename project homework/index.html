@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM </title>
+    <!-- Link to Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans antialiased">
+
+    <!-- Container for the whole page, centered and with padding -->
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="max-w-md w-full bg-white rounded-lg shadow-lg p-8">
+
+            <!-- Header Section -->
+            <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">
+                REGISTRATION FORM 
+            </h1>
+
+            <!-- Form Section -->
+            <form action="#" method="POST" class="space-y-4">
+
+                <!-- Name Field -->
+                <div class="flex flex-col">
+                    <label for="name" class="text-sm font-medium text-gray-700 mb-1">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name"
+                        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <!-- Explanation of Tailwind classes used -->
+                    <!-- px-4: padding-left and padding-right of 1rem -->
+                    <!-- py-2: padding-top and padding-bottom of 0.5rem -->
+                    <!-- border-gray-300: Light gray border color -->
+                    <!-- rounded-lg: Large rounded corners -->
+                    <!-- focus:outline-none: Remove default focus outline -->
+                    <!-- focus:ring-2: Add a ring around the input when focused -->
+                    <!-- focus:ring-blue-500: Use blue color for the ring -->
+                    <!-- focus:border-transparent: Remove border when focused -->
+                </div>
+
+                <!-- Email Field -->
+                <div class="flex flex-col">
+                    <label for="email" class="text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email"
+                        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <!-- Similar styles as the name field -->
+                </div>
+
+                <!-- Password Field -->
+                <div class="flex flex-col">
+                    <label for="password" class="text-sm font-medium text-gray-700 mb-1">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password"
+                        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <!-- Similar styles as the name field -->
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit"
+                    class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                    Submit
+                </button>
+                <!-- Explanation of Tailwind classes used -->
+                <!-- w-full: Set width to 100% of its container -->
+                <!-- bg-blue-500: Set background color to blue -->
+                <!-- text-white: Set text color to white -->
+                <!-- py-2: Padding on top and bottom of 0.5rem -->
+                <!-- rounded-lg: Large rounded corners -->
+                <!-- hover:bg-blue-600: Darker blue background color on hover -->
+                <!-- focus:outline-none: Remove default focus outline -->
+                <!-- focus:ring-2: Add a focus ring when focused -->
+                <!-- focus:ring-blue-500: Blue focus ring color -->
+                <!-- focus:ring-opacity-50: 50% opacity for the focus ring -->
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white text-center py-4 mt-6">
+        <p>&copy; 2025 Tailwind CSS Example</p>
+        <!-- Explanation of Tailwind classes used -->
+        <!-- bg-gray-800: Dark gray background color -->
+        <!-- text-white: White text color -->
+        <!-- text-center: Center the text horizontally -->
+        <!-- py-4: Padding on top and bottom of 1rem -->
+        <!-- mt-6: Margin-top of 1.5rem -->
+    </footer>
+
+</body>
+
+</html>
+
+
+
+<!-- Explanation of Tailwind CSS Classes Used in the Example
+
+bg-gray-100: Sets the background color of the body to light gray.
+
+font-sans: Applies a sans-serif font to the body.
+
+antialiased: Improves font rendering for smoother text.
+
+min-h-screen: Ensures the container takes at least the full height of the screen.
+
+flex: Uses flexbox layout.
+
+items-center: Vertically centers content in the flex container.
+
+justify-center: Horizontally centers content in the flex container.
+
+max-w-md: Sets a maximum width for the container, making it responsive.
+
+w-full: Sets the width to 100% of the container.
+
+bg-white: Sets the background color to white for the card.
+
+rounded-lg: Adds large rounded corners to the card.
+
+shadow-lg: Adds a large shadow effect to the card.
+
+p-8: Applies 2rem of padding to all sides of the container.
+
+space-y-4: Adds vertical space (1rem) between child elements inside the form.
+
+text-sm: Sets the text size to small.
+
+font-medium: Applies medium font weight to labels.
+
+text-gray-700: Sets the text color to dark gray.
+
+mb-1: Adds a margin-bottom of 0.25rem to the label.
+
+
+border-gray-300: Sets the input field border color to light gray.
+
+focus:outline-none: Removes the default outline when the input is focused.
+
+focus:ring-2: Adds a 2px ring around the input field on focus.
+
+focus:ring-blue-500: Sets the ring color to blue on focus.
+
+focus:border-transparent: Makes the border transparent when the input is focused.
+
+hover:bg-blue-600: Changes the button background color to a darker blue on hover.
+
+focus:ring-opacity-50: Sets the opacity of the focus ring to 50%. -->
+
